@@ -1,0 +1,27 @@
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="coyotegotrackqa.onmicrosoft.com" PolicyId="B2C_1A_TrustFrameworkExtensions" PublicPolicyUri="http://coyotegotrackqa.onmicrosoft.com/B2C_1A_TrustFrameworkExtensions" TenantObjectId="b530b3e8-6848-47a0-9b0b-91860df57b1a">
+  <BasePolicy>
+    <TenantId>coyotegotrackqa.onmicrosoft.com</TenantId>
+    <PolicyId>B2C_1A_TrustFrameworkLocalization</PolicyId>
+  </BasePolicy>
+  <BuildingBlocks></BuildingBlocks>
+  <ClaimsProviders>
+    <ClaimsProvider>
+      <DisplayName>Local Account SignIn</DisplayName>
+      <TechnicalProfiles>
+        <TechnicalProfile Id="login-NonInteractive">
+          <Metadata>
+            <Item Key="client_id">1413eee8-cd21-4322-ab0f-0f33e119a85a</Item> <!-- TODO: QA value, must change per env-->
+            <Item Key="IdTokenAudience">5c05049a-7d57-4ead-af5b-21cfee389442</Item> <!-- TODO: QA value, must change per env-->
+          </Metadata>
+          <InputClaims>
+            <InputClaim ClaimTypeReferenceId="client_id" DefaultValue="1413eee8-cd21-4322-ab0f-0f33e119a85a" /> <!-- TODO: QA value, must change per env-->
+            <InputClaim ClaimTypeReferenceId="resource_id" PartnerClaimType="resource" DefaultValue="5c05049a-7d57-4ead-af5b-21cfee389442" /> <!-- TODO: QA value, must change per env-->
+          </InputClaims>
+        </TechnicalProfile>
+      </TechnicalProfiles>
+    </ClaimsProvider>
+  </ClaimsProviders>
+  <!--UserJourneys>
+	
+	</UserJourneys-->
+</TrustFrameworkPolicy>

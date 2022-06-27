@@ -1,0 +1,42 @@
+
+<TrustFrameworkPolicy
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
+  PolicySchemaVersion="0.3.0.0"
+  TenantId="coyotegotrackqa.onmicrosoft.com"
+  PolicyId="B2C_1A_B2C_1_DisableAccounts"
+  PublicPolicyUri="http://coyotegotrackqa.onmicrosoft.com/B2C_1_DisableAccounts"
+  TenantObjectId="b530b3e8-6848-47a0-9b0b-91860df57b1a"
+  DeploymentMode="Development" 
+	UserJourneyRecorderEndpoint="urn:journeyrecorder:applicationinsights"> <!-- TODO: comment out this and line above-->
+
+<!-- TODO: All these tenant ids and the uri will need to be tokenized and changed per environment-->
+
+	<BasePolicy>
+		<TenantId>coyotegotrackqa.onmicrosoft.com</TenantId>
+		<PolicyId>B2C_1A_TrustFrameworkExtensions_DisableAccount</PolicyId>
+	</BasePolicy>
+
+	<RelyingParty>
+		<DefaultUserJourney ReferenceId="DisableAccounts" />
+		<UserJourneyBehaviors>
+			<JourneyInsights TelemetryEngine="ApplicationInsights" InstrumentationKey="7624259c-0656-4635-94c1-c6d0204bfa24" DeveloperMode="true" ClientEnabled="false" ServerEnabled="true" TelemetryVersion="1.0.0" /> <!-- TODO: comment out-->
+		</UserJourneyBehaviors>
+		<TechnicalProfile Id="PolicyProfile">
+			<DisplayName>PolicyProfile</DisplayName>
+			<Protocol Name="OpenIdConnect" />
+			<OutputClaims>
+				<OutputClaim ClaimTypeReferenceId="displayName" />
+				<OutputClaim ClaimTypeReferenceId="surname" />
+				<OutputClaim ClaimTypeReferenceId="email" PartnerClaimType="mail" />
+				<OutputClaim ClaimTypeReferenceId="signInName" />
+				<OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub"/>
+				<OutputClaim ClaimTypeReferenceId="extension_lastLogonTime" />
+				<OutputClaim ClaimTypeReferenceId="CurrentTime" />
+				<OutputClaim ClaimTypeReferenceId="userLockedOutForInactivity" />
+			</OutputClaims>
+			<SubjectNamingInfo ClaimType="sub" />
+		</TechnicalProfile>
+	</RelyingParty>
+</TrustFrameworkPolicy>
