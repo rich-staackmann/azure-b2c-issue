@@ -1,0 +1,295 @@
+[
+  {
+    "Kind": "Headers",
+    "Content": {
+      "UserJourneyRecorderEndpoint": "urn:journeyrecorder:applicationinsights",
+      "CorrelationId": "2a32dd09-2ff4-412c-9453-f786581553a9",
+      "EventInstance": "Event:SELFASSERTED",
+      "TenantId": "coyotegotrackqa.onmicrosoft.com",
+      "PolicyId": "B2C_1A_B2C_1_DisableAccounts"
+    }
+  },
+  {
+    "Kind": "Transition",
+    "Content": {
+      "EventName": "SELFASSERTED",
+      "StateName": "Initial"
+    }
+  },
+  {
+    "Kind": "Predicate",
+    "Content": "Web.TPEngine.StateMachineHandlers.CrossSiteRequestForgeryValidationHandler"
+  },
+  {
+    "Kind": "HandlerResult",
+    "Content": {
+      "Result": true,
+      "Statebag": {
+        "MACHSTATE": {
+          "c": "2022-06-27T15:57:34.8818913Z",
+          "k": "MACHSTATE",
+          "v": "Initial",
+          "p": true
+        },
+        "JC": {
+          "c": "2022-06-27T15:57:34.3350687Z",
+          "k": "JC",
+          "v": "en",
+          "p": true
+        },
+        "ORCH_CS": {
+          "c": "2022-06-27T15:57:39.4903762Z",
+          "k": "ORCH_CS",
+          "v": "1",
+          "p": true
+        },
+        "ORCH_IDX": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "ORCH_IDX",
+          "v": "0",
+          "p": true
+        },
+        "RA": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "RA",
+          "v": "0",
+          "p": true
+        },
+        "RPP": {
+          "c": "2022-06-27T15:57:34.3350687Z",
+          "k": "RPP",
+          "v": "OAUTH2",
+          "p": true
+        },
+        "RPIPP": {
+          "c": "2022-06-27T15:57:34.3350687Z",
+          "k": "RPIPP",
+          "v": "OAuth2ProtocolProvider",
+          "p": true
+        },
+        "OTID": {
+          "c": "2022-06-27T15:57:34.3350687Z",
+          "k": "OTID",
+          "v": "b530b3e8-6848-47a0-9b0b-91860df57b1a",
+          "p": true
+        },
+        "APPMV": {
+          "c": "2022-06-27T15:57:34.3350687Z",
+          "k": "APPMV",
+          "v": "V2",
+          "p": true
+        },
+        "CT": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "CT",
+          "v": "Spa",
+          "p": true
+        },
+        "CC": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "CC",
+          "v": "hMP8nwer8B3kwu7TUq0cGJL7WkkuKzHhNEKyZ9kbM1Q",
+          "p": true
+        },
+        "CCM": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "CCM",
+          "v": "S256",
+          "p": true
+        },
+        "IC": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "IC",
+          "v": "False",
+          "p": true
+        },
+        "MSG(d825b047-963b-47f8-ad14-4d6531be7745)": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "MSG(d825b047-963b-47f8-ad14-4d6531be7745)",
+          "v": "{\"TenantId\":\"coyotegotrackqa.onmicrosoft.com\",\"PolicyId\":\"B2C_1A_B2C_1_DisableAccounts\",\"RedirectUri\":\"http://localhost:3000/\",\"AdditionalParameters\":{\"client-request-id\":\"18ab4f7e-7a98-40f6-a7d6-7bdfb734d9e9\",\"x-client-SKU\":\"msal.js.browser\",\"x-client-VER\":\"2.14.0\",\"x-client-OS\":\"\",\"x-client-CPU\":\"\",\"client_info\":\"1\",\"code_challenge\":\"hMP8nwer8B3kwu7TUq0cGJL7WkkuKzHhNEKyZ9kbM1Q\",\"code_challenge_method\":\"S256\"},\"Nonce\":\"9e76444b-5e37-48ad-9b57-015c2c3eb06a\",\"State\":\"eyJpZCI6ImFlYTIyNDEzLTdiNDEtNDVmNi05YjcxLWIzOWMyODJlMGNkYiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0=\",\"ClientId\":\"9280dd51-20a2-4962-a175-0addf46b2811\",\"ResponseType\":\"code\",\"ResponseMode\":\"fragment\",\"ResponseRedirector\":{\"URI\":\"http://localhost:3000/\",\"D\":false,\"WF\":true,\"R\":false,\"S\":false},\"Scope\":\"openid offline_access 9280dd51-20a2-4962-a175-0addf46b2811 profile\",\"AppModelVersion\":1,\"ScopedProviders\":[]}",
+          "p": true,
+          "t": "OAuth2"
+        },
+        "IMESSAGE": {
+          "c": "2022-06-27T15:57:34.6788286Z",
+          "k": "IMESSAGE",
+          "v": "d825b047-963b-47f8-ad14-4d6531be7745",
+          "p": true
+        },
+        "EID": {
+          "c": "2022-06-27T15:57:34.6943918Z",
+          "k": "EID",
+          "v": "urn:com:microsoft:aad:b2c:elements:contract:unifiedssp:2.1.5",
+          "p": true
+        },
+        "CMESSAGE": {
+          "c": "2022-06-27T15:57:39.4903762Z",
+          "k": "CMESSAGE",
+          "v": "d825b047-963b-47f8-ad14-4d6531be7745",
+          "p": true
+        },
+        "ComplexItems": "_MachineEventQ, REPRM, TCTX"
+      },
+      "PredicateResult": "True"
+    }
+  },
+  {
+    "Kind": "Predicate",
+    "Content": "Web.TPEngine.StateMachineHandlers.IsDisplayControlActionRequestHandler"
+  },
+  {
+    "Kind": "HandlerResult",
+    "Content": {
+      "Result": false,
+      "PredicateResult": "False"
+    }
+  },
+  {
+    "Kind": "Predicate",
+    "Content": "Web.TPEngine.StateMachineHandlers.IsClaimVerificationRequestHandler"
+  },
+  {
+    "Kind": "HandlerResult",
+    "Content": {
+      "Result": true,
+      "PredicateResult": "False"
+    }
+  },
+  {
+    "Kind": "Predicate",
+    "Content": "Web.TPEngine.StateMachineHandlers.SelfAssertedMessageValidationHandler"
+  },
+  {
+    "Kind": "HandlerResult",
+    "Content": {
+      "Result": false,
+      "RecorderRecord": {
+        "Values": [
+          {
+            "Key": "Validation",
+            "Value": {
+              "Values": [
+                {
+                  "Key": "SubmittedBy",
+                  "Value": null
+                },
+                {
+                  "Key": "ProtocolProviderType",
+                  "Value": "SelfAssertedAttributeProvider"
+                },
+                {
+                  "Key": "TechnicalProfileEnabled",
+                  "Value": {
+                    "EnabledRule": "Always",
+                    "EnabledResult": true,
+                    "TechnicalProfile": "login-NonInteractive"
+                  }
+                },
+                {
+                  "Key": "ValidationTechnicalProfile",
+                  "Value": {
+                    "Values": [
+                      {
+                        "Key": "TechnicalProfileId",
+                        "Value": "login-NonInteractive"
+                      },
+                      {
+                        "Key": "MappingDefaultValueForClaim",
+                        "Value": {
+                          "PartnerClaimType": "client_id",
+                          "PolicyClaimType": "client_id"
+                        }
+                      },
+                      {
+                        "Key": "MappingDefaultValueForClaim",
+                        "Value": {
+                          "PartnerClaimType": "resource",
+                          "PolicyClaimType": "resource_id"
+                        }
+                      },
+                      {
+                        "Key": "MappingPartnerTypeForClaim",
+                        "Value": {
+                          "PartnerClaimType": "username",
+                          "PolicyClaimType": "signInName"
+                        }
+                      },
+                      {
+                        "Key": "MappingPartnerTypeForClaim",
+                        "Value": {
+                          "PartnerClaimType": "password",
+                          "PolicyClaimType": "password"
+                        }
+                      },
+                      {
+                        "Key": "MappingDefaultValueForClaim",
+                        "Value": {
+                          "PartnerClaimType": "grant_type",
+                          "PolicyClaimType": "grant_type"
+                        }
+                      },
+                      {
+                        "Key": "MappingDefaultValueForClaim",
+                        "Value": {
+                          "PartnerClaimType": "scope",
+                          "PolicyClaimType": "scope"
+                        }
+                      },
+                      {
+                        "Key": "MappingDefaultValueForClaim",
+                        "Value": {
+                          "PartnerClaimType": "nca",
+                          "PolicyClaimType": "nca"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Key": "Exception",
+                  "Value": {
+                    "Kind": "Handled",
+                    "HResult": "80131500",
+                    "Message": "Invalid username or password.",
+                    "Data": {
+                      "IsPolicySpecificError": false
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "Statebag": {
+        "Complex-CLMS": {},
+        "SE": {
+          "c": "2022-06-27T15:57:40.6154235Z",
+          "k": "SE",
+          "v": "Self-asserted_local",
+          "p": true
+        },
+        "ComplexItems": "_MachineEventQ, REPRM, TCTX, S_CTP, M_EXCP"
+      },
+      "Exception": {
+        "Kind": "Handled",
+        "HResult": "80131500",
+        "Message": "Invalid username or password.",
+        "Data": {
+          "IsPolicySpecificError": false
+        }
+      },
+      "PredicateResult": "False"
+    }
+  },
+  {
+    "Kind": "Action",
+    "Content": "Web.TPEngine.StateMachineHandlers.SendRetryHandler"
+  },
+  {
+    "Kind": "HandlerResult",
+    "Content": {
+      "Result": true
+    }
+  }
+]
