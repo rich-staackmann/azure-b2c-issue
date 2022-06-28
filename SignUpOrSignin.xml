@@ -5,8 +5,8 @@
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
   PolicySchemaVersion="0.3.0.0"
   TenantId="coyotegotrackqa.onmicrosoft.com"
-  PolicyId="B2C_1A_B2C_1_DisableAccounts"
-  PublicPolicyUri="http://coyotegotrackqa.onmicrosoft.com/B2C_1_DisableAccounts"
+  PolicyId="B2C_1A_signuporsignin_disableAccount"
+  PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_signuporsignin_disableAccount"
   TenantObjectId="b530b3e8-6848-47a0-9b0b-91860df57b1a"
   DeploymentMode="Development" 
 	UserJourneyRecorderEndpoint="urn:journeyrecorder:applicationinsights"> <!-- TODO: comment out this and line above-->
@@ -19,7 +19,7 @@
 	</BasePolicy>
 
 	<RelyingParty>
-		<DefaultUserJourney ReferenceId="DisableAccounts" />
+		<DefaultUserJourney ReferenceId="SignUpOrSignInEmail" />
 		<UserJourneyBehaviors>
 			<JourneyInsights TelemetryEngine="ApplicationInsights" InstrumentationKey="7624259c-0656-4635-94c1-c6d0204bfa24" DeveloperMode="true" ClientEnabled="false" ServerEnabled="true" TelemetryVersion="1.0.0" /> <!-- TODO: comment out-->
 		</UserJourneyBehaviors>
@@ -28,6 +28,7 @@
 			<Protocol Name="OpenIdConnect" />
 			<OutputClaims>
 				<OutputClaim ClaimTypeReferenceId="displayName" />
+				<OutputClaim ClaimTypeReferenceId="givenName" />
 				<OutputClaim ClaimTypeReferenceId="surname" />
 				<OutputClaim ClaimTypeReferenceId="email" PartnerClaimType="mail" />
 				<OutputClaim ClaimTypeReferenceId="signInName" />
@@ -35,6 +36,7 @@
 				<OutputClaim ClaimTypeReferenceId="extension_lastLogonTime" />
 				<OutputClaim ClaimTypeReferenceId="CurrentTime" />
 				<OutputClaim ClaimTypeReferenceId="userLockedOutForInactivity" />
+				<OutputClaim ClaimTypeReferenceId="tenantId" AlwaysUseDefaultValue="true" DefaultValue="{Policy:TenantObjectId}" />
 			</OutputClaims>
 			<SubjectNamingInfo ClaimType="sub" />
 		</TechnicalProfile>

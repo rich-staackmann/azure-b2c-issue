@@ -222,7 +222,7 @@
 	</ClaimsProviders>
 
 	<UserJourneys>
-		<UserJourney Id="DisableAccounts">
+		<UserJourney Id="SignUpOrSignInEmail">
 			<OrchestrationSteps>
 				<!-- Present the sign in page -->
 				<OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
