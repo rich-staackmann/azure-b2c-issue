@@ -6,7 +6,7 @@
   PolicySchemaVersion="0.3.0.0"
   TenantId="coyotegotrackqa.onmicrosoft.com"
   PolicyId="B2C_1A_signuporsignin_disableAccount"
-  PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_signuporsignin_disableAccount"
+  PublicPolicyUri="http://coyotegotrackqa.onmicrosoft.com/B2C_1A_signuporsignin_disableAccount"
   TenantObjectId="b530b3e8-6848-47a0-9b0b-91860df57b1a"
   DeploymentMode="Development" 
 	UserJourneyRecorderEndpoint="urn:journeyrecorder:applicationinsights"> <!-- TODO: comment out this and line above-->
